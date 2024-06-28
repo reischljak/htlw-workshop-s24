@@ -21,7 +21,7 @@ const envSchema = object({
     //})
     PORT: coerce.number({
         message: "PORT must be a number!"
-    }).min(0).max(65536),
+    }).min(0).max(65535),
 
     MONGO_URL: string({
         message: "required"
